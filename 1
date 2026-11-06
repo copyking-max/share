@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>第一届混凝土桥梁损伤智能诊断与韧性加固学术研讨会</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
+        p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 14px 0;
+            margin-top: 20px;
+            background-color: #07c160;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        #mask {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            z-index: 999;
+        }
+        .tip-img {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            color: white;
+            font-size: 17px;
+            line-height: 1.8;
+            font-weight: bold;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>第一届混凝土桥梁损伤智能诊断与韧性加固学术研讨会</h2>
+    <p>会议时间：2027年4月9日-11日<br>会议地点：山东济南</p>
+    <button class="btn" onclick="showTip()">👉 点此快速转发分享</button>
+</div>
+
+<div id="mask" onclick="hideTip()">
+    <div class="tip-img">
+        ↗ 点击右上角【...】<br>
+        选择【发送给朋友】<br>
+        点击右上角【多选】即可群发
+    </div>
+</div>
+
+<script>
+    function showTip() {
+        document.getElementById('mask').style.display = 'block';
+    }
+    function hideTip() {
+        document.getElementById('mask').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
